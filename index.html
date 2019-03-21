@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grant's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo nav-link">
+        <p>GB</p>
+        <div class="logo__rotate"></div>
+      </a>
+
+      <div class="nav-items">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="side-nav">
+      <div class="cancel">&#215;</div>
+      <div class="side-nav__items">
+        <a href="#" class="nav-link side-nav__link side-nav__home active"
+          >Home</a
+        >
+        <a href="#about" class="nav-link side-nav__link side-nav__about"
+          >About</a
+        >
+        <a href="#projects" class="nav-link side-nav__link side-nav__projects"
+          >Projects</a
+        >
+        <a href="#contact" class="nav-link side-nav__link side-nav__contact"
+          >Contact</a
+        >
+      </div>
+      <hr />
+
+      <p>Grant Ballmer is a Toledo based developer.</p>
+
+      <div class="side-nav__icons">
+        <img src="./assets/icons/github.svg" alt="github logo" />
+        <img src="./assets/icons/linkedin.svg" alt="linkedin logo" />
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-header">
+          <h1 class="hero-header__first">
+            Hello, I'm <span>Grant Ballmer</span>.
+          </h1>
+          <h1 class="hero-header__second">I'm a front-end web developer.</h1>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__image"></div>
+
+        <div class="about__details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          eleifend eget felis gravida lacinia. Aliquam mauris tellus, luctus eu
+          congue ut, imperdiet at sapien. Aenean ac suscipit diam, quis ornare
+          nunc. Curabitur sit amet ultricies erat, quis vulputate felis. Proin
+          et metus sed diam vehicula lacinia. Suspendisse justo risus, feugiat
+          eu ipsum sed, auctor maximus turpis. Ut a ornare ante, posuere varius
+          dui. Suspendisse lacinia ex eget malesuada vehicula.
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="project">
+          <div class="project__top">
+            <div class="project__desc">
+              <a
+                href="https://grantballmer.github.io/taste-clone/"
+                target="_blank"
+                class="project__desc--title"
+              >
+                Taste.io Clone
+              </a>
+              <div class="project__desc--details">
+                <p>
+                  Web app that allows users to find movies, track preferences,
+                  and keep a list of movies to watch.
+                </p>
+
+                <p>
+                  The app uses React with Redux on the front-end for quick page
+                  navigation. Firebase is utilized on the back-end for login
+                  authentication and to store users watchlist, movie
+                  preferences, and recommendations
+                </p>
+              </div>
+              <div class="project__desc--mobile">
+                <p>Movie tracking and preferences React app.</p>
+              </div>
+              <!-- empty div for justify-between spacing -->
+              <div></div>
+            </div>
+
+            <div class="project__image">
+              <img
+                src="./assets/images/taste.io-mockup.png"
+                alt="taste.io responsive design"
+              />
+            </div>
+          </div>
+
+          <div class="project__bottom">
+            <div class="build-tools">
+              <div class="build-tools__item">
+                <img src="./assets/icons/react.svg" alt="react logo" />
+              </div>
+              <div class="build-tools__item">
+                <img src="./assets/icons/redux.svg" alt="redux logo" />
+              </div>
+              <div class="build-tools__item">
+                <img src="./assets/icons/firebase.svg" alt="firebase logo" />
+              </div>
+              <div class="build-tools__item">
+                <img src="./assets/icons/sass.svg" alt="sass logo" />
+              </div>
+            </div>
+
+            <a
+              href="https://grantballmer.github.io/taste-clone/"
+              target="_blank"
+              class=" btn project__btn"
+            >
+              Go to site
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project__top">
+            <div class="project__desc">
+              <a
+                href="https://unruffled-easley-f88b5b.netlify.com/"
+                target="_blank"
+                class="project__desc--title"
+              >
+                Purchase Productions
+              </a>
+              <div class="project__desc--details">
+                <p>
+                  Purchase Productions LLC. provides band management, booking,
+                  design, and photography; based out of Muskegon, Michigan. The
+                  site uses GatsbyJS and React to make for a pleasant and speedy
+                  user experience. Netlify CMS allows approved users to edit and
+                  upload content to the site.
+                </p>
+              </div>
+              <div class="project__desc--mobile">
+                <p>
+                  Band management, booking, design, and photography site.
+                </p>
+              </div>
+              <!-- empty div for justify-between spacing -->
+              <div></div>
+            </div>
+
+            <div class="project__image">
+              <img
+                src="./assets/images/purchase-mockup.png"
+                alt="responsive design"
+              />
+            </div>
+          </div>
+
+          <div class="project__bottom">
+            <div class="build-tools">
+              <div class="build-tools__item">
+                <img src="./assets/icons/gatsbyjs.svg" alt="gatsby logo" />
+              </div>
+              <div class="build-tools__item">
+                <img src="./assets/icons/react.svg" alt="react logo" />
+              </div>
+              <div class="build-tools__item">
+                <img src="./assets/icons/sass.svg" alt="sass logo" />
+              </div>
+              <div class="build-tools__item">
+                <img
+                  src="./assets/icons/netlify-cms.svg"
+                  alt="netlify cms logo"
+                />
+              </div>
+            </div>
+
+            <a
+              href="https://unruffled-easley-f88b5b.netlify.com/"
+              target="_blank"
+              class=" btn project__btn"
+            >
+              Go to site
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project__top">
+            <div class="project__desc">
+              <a
+                href="https://grantballmer.github.io/manhattans/"
+                target="_blank"
+                class="project__desc--title"
+              >
+                Manhattan's Pub & Cheer Mockup
+              </a>
+              <div class="project__desc--details">
+                <p>
+                  >Mockup for an update/redesign of the Toledo restaurant
+                  "Manhattan's Pub & Cheer". Uses the power of Sass/Scss to
+                  create a responsive design for any device type. The site also
+                  uses browserify to bundle the JS files.
+                </p>
+              </div>
+              <div class="project__desc--mobile">
+                <p>Redesign for Manhattan's Pub & Cheer.</p>
+              </div>
+              <!-- empty div for justify-between spacing -->
+              <div></div>
+            </div>
+
+            <div class="project__image">
+              <img
+                src="./assets/images/manhattans-mockup.png"
+                alt="responsive design"
+              />
+            </div>
+          </div>
+
+          <div class="project__bottom">
+            <div class="build-tools">
+              <div class="build-tools__item">
+                <img
+                  src="./assets/icons/javascript.svg"
+                  alt="javascript logo"
+                />
+              </div>
+
+              <div class="build-tools__item">
+                <img
+                  src="./assets/icons/browserify.svg"
+                  alt="browserify logo"
+                />
+              </div>
+
+              <div class="build-tools__item">
+                <img src="./assets/icons/sass.svg" alt="sass logo" />
+              </div>
+            </div>
+
+            <a
+              href="https://grantballmer.github.io/manhattans/"
+              target="_blank"
+              class=" btn project__btn"
+            >
+              Go to site
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project__top">
+            <div class="project__desc">
+              <a
+                href="https://grantballmerphotography.com"
+                target="_blank"
+                class="project__desc--title"
+              >
+                Personal Photography Site
+              </a>
+              <div class="project__desc--details">
+                <p>
+                  My personal photography site to host photos from my travels.
+                  Leaflet allows for an interactive map to scroll around and
+                  view thumbnails of the galleries. Slick slider made for a
+                  visually appealing slider and easy-to-use film-strip guide.
+                </p>
+              </div>
+              <div class="project__desc--mobile">
+                <p>
+                  Site to display photos from my travels.
+                </p>
+              </div>
+              <!-- empty div for justify-between spacing -->
+              <div></div>
+            </div>
+
+            <div class="project__image">
+              <img
+                src="./assets/images/photography-mockup.png"
+                alt="responsive design"
+              />
+            </div>
+          </div>
+
+          <div class="project__bottom">
+            <div class="build-tools">
+              <div class="build-tools__item">
+                <img
+                  src="./assets/icons/javascript.svg"
+                  alt="javascript logo"
+                />
+              </div>
+              <div class="build-tools__item">
+                <img src="./assets/icons/leaflet.svg" alt="leaflet logo" />
+              </div>
+
+              <div class="build-tools__item">
+                <img src="./assets/icons/slick.gif" alt="slick slider logo" />
+              </div>
+
+              <div class="build-tools__item">
+                <img src="./assets/icons/sass.svg" alt="sass logo" />
+              </div>
+            </div>
+
+            <a
+              href="https://grantballmerphotography.com"
+              target="_blank"
+              class=" btn project__btn"
+            >
+              Go to site
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="project">
+        
+        <div class="project__image">
+          <img src="./assets/images/movies-resp-600.png" alt="responsive design">
+        </div>
+        
+        <div class="project__desc">
+          <h1 class="project__desc--title">Taste.io Clone</h1>
+          <p class="project__desc--details">Clone of taste.io site to discover and track movies.</p>
+          <div class="project__desc--tools">
+            <div class="build-tool">React</div>
+            <div class="build-tool">Firebase</div>
+            <div class="build-tool">The Movie Database API</div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="project">
+        
+        <div class="project__image">
+          <img src="./assets/images/design.jpg" alt="responsive design">
+        </div>
+        
+        <div class="project__desc">
+          <h1 class="project__desc--title">Taste.io Clone</h1>
+          <p class="project__desc--details">Clone of taste.io site to discover and track movies.</p>
+          <div class="project__desc--tools">
+            <div class="build-tool">React</div>
+            <div class="build-tool">Firebase</div>
+            <div class="build-tool">The Movie Database API</div>
+          </div>
+        </div>
+        
+      </div> -->
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-box">
+          <div class="personal-details">
+            <h2>Contact Info</h2>
+            <div class="social-media">
+              <div class="social-media__item">
+                <img src="./assets/icons/email.svg" alt="email icon" />
+                <p>grant.a.ballmer@gmail.com</p>
+              </div>
+              <div class="social-media__item">
+                <img src="./assets/icons/phone.svg" alt="phone icon" />
+                <p>555-555-5555</p>
+              </div>
+              <div class="social-media__item">
+                <img src="./assets/icons/github.svg" alt="github icon" />
+                <p>Github profile</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-container">
+            <h1>Get in touch</h1>
+            <form>
+              <input type="text" name="name" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
+              <textarea placeholder="message"></textarea>
+              <input
+                type="submit"
+                value="Submit Message"
+                class="btn contact-btn"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="./scripts/bundle.js"></script>
+  </body>
+</html>
+
+<!-- 
+https://jonny.me/ 
+https://chippd.github.io/
+-->

@@ -1,0 +1,122 @@
+.contact {
+  padding: 4% 8%;
+}
+
+.contact-box {
+  width: 100%;
+  height: 520px;
+  padding: 0 4%;
+  @include flex(center,center);
+  border-radius: 8px;
+  // background-color: grey;
+  background-image: url('../assets/images/desk.jpg');
+  background-position: center;
+  position: relative;
+  
+  &:after {
+    @include afterOverlay;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 0;
+  }
+  
+}
+
+.personal-details {
+  width: 50%;
+  height: 80%;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  padding: 0 4%;
+  z-index: 1;
+  
+  & > * {
+    margin-bottom: 8%;
+  }
+  
+  h1 {
+    font-size: 3.4rem;
+    color: $blue-accent;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+    color: white;
+  }
+}
+
+.social-media {
+  height: 90%;
+  @include flex(space-around,flex-start);
+  flex-direction: column;
+  z-index: 1;
+  
+  &__item {
+    @include flex(flex-start,center);
+    color: white;
+    font-size: 1.6rem;
+    
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+
+
+
+.form-container {
+  width: 50%;
+  height: 80%;
+  padding: 2% 4%;
+  background-color: white;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+  box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  
+  form {
+    width: 100%;
+    height: 90%;
+    @include flex(space-around,flex-start);
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: $blue-accent;
+    position: relative;
+    
+    &:after {
+      width: 50px;
+      height: 3px;
+      content: '';
+      display: block;
+      background-color: $blue-accent;
+    }
+  }
+  
+  input, textarea {
+    box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.3);
+    padding-left: 8px;
+    border: 1px solid rgba(0,0,0, 0.1);
+  }
+  
+  input {
+    height: 10%;
+    width: 60%;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 40%;
+    resize: none;
+  }
+}
+
+.contact-btn {
+  width: 120px;
+  height: 14%;
+  margin: 0 auto;
+  background-color: $blue-accent;
+  padding-left: 0;
+  border: 0;
+}
