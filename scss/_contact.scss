@@ -12,16 +12,17 @@
   border-radius: 8px;
   // background-color: grey;
   // background-image: url("../assets/images/desk.jpg");
-  background: linear-gradient(to right, #363188, $blue-accent);
+  // background: linear-gradient(to right, #363188, $blue-accent);
+  background-color: $blue-accent;
 
   background-position: center;
   position: relative;
 
-  &:after {
-    @include afterOverlay;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-  }
+  // &:after {
+  //   @include afterOverlay;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   z-index: 0;
+  // }
 
   @include tablet {
     flex-direction: row;
