@@ -472,7 +472,7 @@ window.addEventListener("scroll", e => {
     : nav.classList.remove("nav-colored");
 });
 
-},{"./main":4}],3:[function(require,module,exports){
+},{"./main":5}],3:[function(require,module,exports){
 const { nav, sideNav } = require('./main');
 const menu = document.querySelector('.nav-menu');
 const cancel = document.querySelector('.cancel');
@@ -495,20 +495,31 @@ cancel.addEventListener('click', toggleSideNav);
 
 module.exports = removeSideNav;
 
-},{"./main":4}],4:[function(require,module,exports){
-const nav = document.querySelector('nav');
-const sideNav = document.querySelector('.side-nav');
+},{"./main":5}],4:[function(require,module,exports){
+const form = document.querySelector("form");
+const honeypot = form.querySelector(".extra");
+
+form.addEventListener("submit", function(e) {
+  if (honeypot.value !== "") {
+    e.preventDefault();
+  }
+});
+
+},{}],5:[function(require,module,exports){
+const nav = document.querySelector("nav");
+const sideNav = document.querySelector(".side-nav");
 
 module.exports = {
-    nav,
-    sideNav,
+  nav,
+  sideNav
 };
 
-const smoothScroll = require('./smoothScroll');
-const navScroll = require('./handleScrollEvent');
-const handleSideNav = require('./handleSideNav');
+const smoothScroll = require("./smoothScroll");
+const navScroll = require("./handleScrollEvent");
+const handleSideNav = require("./handleSideNav");
+const honeypot = require("./honeypot.js");
 
-},{"./handleScrollEvent":2,"./handleSideNav":3,"./smoothScroll":5}],5:[function(require,module,exports){
+},{"./handleScrollEvent":2,"./handleSideNav":3,"./honeypot.js":4,"./smoothScroll":6}],6:[function(require,module,exports){
 // const { sideNav } = require('./main');
 
 const smoothscroll = require("smoothscroll-polyfill");
@@ -535,4 +546,4 @@ navLinks.forEach(link =>
   })
 );
 
-},{"./handleSideNav":3,"smoothscroll-polyfill":1}]},{},[4]);
+},{"./handleSideNav":3,"smoothscroll-polyfill":1}]},{},[5]);
