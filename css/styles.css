@@ -591,11 +591,13 @@ nav a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 4% 0;
+  margin-bottom: 20%;
 }
 
 @media (min-width: 550px) {
   .project {
     height: 500px;
+    margin-bottom: 10%;
   }
 }
 
@@ -635,6 +637,7 @@ nav a {
 
 @media (min-width: 812px) {
   .project__top {
+    height: 65%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -800,15 +803,15 @@ nav a {
 @media (min-width: 550px) {
   .project__bottom {
     height: 25%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media (min-width: 812px) {
   .project__bottom {
-    height: 25%;
+    height: 30%;
   }
 }
 
@@ -829,7 +832,7 @@ nav a {
 
 @media (min-width: 550px) {
   .build-tools {
-    height: 66.66%;
+    height: 50%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -877,6 +880,7 @@ nav a {
     margin: 0 8px;
   }
   .build-tools__item img {
+    height: auto;
     max-height: 100%;
   }
 }
@@ -998,9 +1002,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1191,6 +1194,7 @@ nav a {
           box-shadow: 2px 3px 6px 1px rgba(0, 0, 0, 0.3);
   padding-left: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-appearance: none;
 }
 
 .form-container input {

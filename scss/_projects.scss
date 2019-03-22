@@ -9,9 +9,11 @@
   @include flex(center, center);
   flex-direction: column;
   padding: 4% 0;
+  margin-bottom: 20%;
 
   @include wide-mobile {
     height: 500px;
+    margin-bottom: 10%;
   }
 
   @include tablet {
@@ -31,6 +33,7 @@
   }
 
   @include tablet {
+    height: 65%;
     flex-direction: row;
     justify-content: center;
   }
@@ -131,11 +134,11 @@
 
   @include wide-mobile {
     height: 25%;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   @include tablet {
-    height: 25%;
+    height: 30%;
   }
 }
 
@@ -149,11 +152,12 @@
   // flex-wrap: wrap;
 
   @include wide-mobile {
-    height: 66.66%;
+    height: 50%;
     justify-content: center;
     flex-wrap: nowrap;
     padding: 0;
     @include flex(space-between, center);
+    // margin-bottom: 12px;
   }
 
   &__item {
@@ -178,6 +182,7 @@
       margin: 0 8px;
 
       img {
+        height: auto;
         max-height: 100%;
       }
     }
