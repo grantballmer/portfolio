@@ -3,15 +3,36 @@
   height: 50vh;
   background-color: $blue-accent;
   @include flex(space-around, center);
+  flex-direction: column;
   padding: 4%;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .about__image {
-  width: 250px;
-  height: 250px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
+  @include flex(center, center);
   // background-color: #5D5C61;
-  background-color: green;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+  }
+
+  @include wide-mobile {
+    width: 100px;
+    height: 100px;
+  }
+
+  @include tablet {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .about__details {
@@ -20,16 +41,15 @@
   height: 50%;
   @include flex(center, center);
   flex-direction: column;
-
-  // font-size: 2.2rem;
   font-size: 1.4rem;
   color: white;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.2;
 
   @include wide-mobile {
     width: 70%;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
   }
 
   @include tablet {
