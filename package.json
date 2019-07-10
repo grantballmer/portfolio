@@ -11,5 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "smoothscroll-polyfill": "^0.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantballmer/portfolio"
   }
 }
